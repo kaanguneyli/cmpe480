@@ -1,0 +1,59 @@
+variables:
+    ['T', 'Y', 'X', 'W', 'O', 'F', 'R']
+domains:
+    {'T': [1, 2, 3, 4, 5, 6, 7, 8, 9], 'Y': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'X': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'W': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'O': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'F': [0, 1], 'R': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'C1': [0, 1], 'C2': [0, 1], 'C3': [0, 1], 'C4': [0, 1]}
+constraints:
+                    'T-Y': lambda T, Y: T != Y,
+
+                    'T-X': lambda T, X: T != X,
+
+                    'T-W': lambda T, W: T != W,
+
+                    'T-O': lambda T, O: T != O,
+
+                    'T-F': lambda T, F: T != F,
+
+                    'T-R': lambda T, R: T != R,
+
+                    'Y-X': lambda Y, X: Y != X,
+
+                    'Y-W': lambda Y, W: Y != W,
+
+                    'Y-O': lambda Y, O: Y != O,
+
+                    'Y-F': lambda Y, F: Y != F,
+
+                    'Y-R': lambda Y, R: Y != R,
+
+                    'X-W': lambda X, W: X != W,
+
+                    'X-O': lambda X, O: X != O,
+
+                    'X-F': lambda X, F: X != F,
+
+                    'X-R': lambda X, R: X != R,
+
+                    'W-O': lambda W, O: W != O,
+
+                    'W-F': lambda W, F: W != F,
+
+                    'W-R': lambda W, R: W != R,
+
+                    'O-F': lambda O, F: O != F,
+
+                    'O-R': lambda O, R: O != R,
+
+                    'F-R': lambda F, R: F != R,
+
+                    'T-Y-X-W-O-F-R': lambda T, Y, X, W, O, F, R: 2 * (10000*T + 1000*Y + 100*X + 10*W + O) == 100000*F + 10000*O + 1000*Y + 100*X + 10*W + R,
+
+                    'O-R*': lambda O, R: 2 * O == R or 2 * O == R + 10,
+
+                    'W-Y*': lambda W, Y: 2 * W == Y or 2 * W == Y + 10 or 2 * W == Y - 1 or 2 * W == Y + 9,
+
+                    'X': lambda X: 2 * X == X or 2 * X == X + 10 or 2 * X == X - 1 or 2 * X == X + 9,
+
+                    'Y-W*': lambda Y, W: 2 * Y == W or 2 * Y == W + 10 or 2 * Y == W - 1 or 2 * Y == W + 9,
+
+                    'T-O-F': lambda T, O, F: 2 * T == 10*F + O or 2 * T == 10*F + O - 1,
+

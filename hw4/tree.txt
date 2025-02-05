@@ -1,0 +1,1379 @@
+Split on feature: previous_loan_defaults_on_file
+    Value = No:
+        Split on feature: loan_percent_income
+            Value = (-0.001, 0.06]:
+                Split on feature: loan_int_rate
+                    Value = (5.419, 7.88]:
+                        Split on feature: person_income
+                            Value = (7999.999, 43081.8]:
+                                Leaf: predicts 0
+                            Value = (43081.8, 59456.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (59456.0, 76436.8]:
+                                Split on feature: cb_person_cred_hist_length
+                                    Value = (1.999, 3.0]:
+                                        Leaf: predicts 0
+                                    Value = (3.0, 4.0]:
+                                        Leaf: predicts 0
+                                    Value = (4.0, 6.0]:
+                                        Leaf: predicts 0
+                                    Value = (6.0, 9.0]:
+                                        Leaf: predicts 0
+                                    Value = (9.0, 30.0]:
+                                        Leaf: predicts 0
+                            Value = (76436.8, 103841.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (103841.0, 7200766.0]:
+                                Split on feature: person_home_ownership
+                                    Value = MORTGAGE:
+                                        Leaf: predicts 0
+                                    Value = OWN:
+                                        Leaf: predicts 0
+                                    Value = RENT:
+                                        Leaf: predicts 0
+                    Value = (7.88, 10.58]:
+                        Split on feature: loan_intent
+                            Value = DEBTCONSOLIDATION:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 0
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 0
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 0
+                                    Value = (76436.8, 103841.0]:
+                                        Leaf: predicts 0
+                                    Value = (103841.0, 7200766.0]:
+                                        Leaf: predicts 0
+                            Value = EDUCATION:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 0
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 0
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 0
+                                    Value = (76436.8, 103841.0]:
+                                        Leaf: predicts 0
+                                    Value = (103841.0, 7200766.0]:
+                                        Leaf: predicts 0
+                            Value = HOMEIMPROVEMENT:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 1
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 0
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 0
+                                    Value = (76436.8, 103841.0]:
+                                        Leaf: predicts 0
+                                    Value = (103841.0, 7200766.0]:
+                                        Leaf: predicts 0
+                            Value = MEDICAL:
+                                Split on feature: loan_amnt
+                                    Value = (499.999, 4400.0]:
+                                        Leaf: predicts 0
+                                    Value = (4400.0, 6600.0]:
+                                        Leaf: predicts 0
+                                    Value = (6600.0, 10000.0]:
+                                        Leaf: predicts 0
+                                    Value = (10000.0, 14520.2]:
+                                        Leaf: predicts 0
+                                    Value = (14520.2, 35000.0]:
+                                        Leaf: predicts 1
+                            Value = PERSONAL:
+                                Split on feature: loan_amnt
+                                    Value = (499.999, 4400.0]:
+                                        Leaf: predicts 0
+                                    Value = (4400.0, 6600.0]:
+                                        Leaf: predicts 0
+                                    Value = (6600.0, 10000.0]:
+                                        Leaf: predicts 0
+                                    Value = (10000.0, 14520.2]:
+                                        Leaf: predicts 0
+                                    Value = (14520.2, 35000.0]:
+                                        Leaf: predicts 1
+                            Value = VENTURE:
+                                Leaf: predicts 0
+                    Value = (10.58, 11.49]:
+                        Split on feature: loan_intent
+                            Value = DEBTCONSOLIDATION:
+                                Split on feature: credit_score
+                                    Value = (389.999, 591.0]:
+                                        Leaf: predicts 1
+                                    Value = (591.0, 626.0]:
+                                        Leaf: predicts 0
+                                    Value = (626.0, 652.0]:
+                                        Leaf: predicts 0
+                                    Value = (652.0, 676.0]:
+                                        Leaf: predicts 0
+                                    Value = (676.0, 850.0]:
+                                        Leaf: predicts 0
+                            Value = EDUCATION:
+                                Split on feature: credit_score
+                                    Value = (389.999, 591.0]:
+                                        Leaf: predicts 0
+                                    Value = (591.0, 626.0]:
+                                        Leaf: predicts 0
+                                    Value = (626.0, 652.0]:
+                                        Leaf: predicts 0
+                                    Value = (652.0, 676.0]:
+                                        Leaf: predicts 0
+                                    Value = (676.0, 850.0]:
+                                        Leaf: predicts 0
+                            Value = HOMEIMPROVEMENT:
+                                Split on feature: person_age
+                                    Value = (19.999, 23.0]:
+                                        Leaf: predicts 1
+                                    Value = (23.0, 25.0]:
+                                        Leaf: predicts 0
+                                    Value = (25.0, 27.0]:
+                                        Leaf: predicts 0
+                                    Value = (27.0, 31.0]:
+                                        Leaf: predicts 0
+                                    Value = (31.0, 144.0]:
+                                        Leaf: predicts 0
+                            Value = MEDICAL:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 0
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 0
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 1
+                                    Value = (76436.8, 103841.0]:
+                                        Leaf: predicts 0
+                                    Value = (103841.0, 7200766.0]:
+                                        Leaf: predicts 0
+                            Value = PERSONAL:
+                                Split on feature: person_education
+                                    Value = Associate:
+                                        Leaf: predicts 0
+                                    Value = Bachelor:
+                                        Leaf: predicts 0
+                                    Value = Doctorate:
+                                        Leaf: predicts 1
+                                    Value = High School:
+                                        Leaf: predicts 0
+                                    Value = Master:
+                                        Leaf: predicts 0
+                            Value = VENTURE:
+                                Split on feature: credit_score
+                                    Value = (389.999, 591.0]:
+                                        Leaf: predicts 0
+                                    Value = (591.0, 626.0]:
+                                        Leaf: predicts 0
+                                    Value = (626.0, 652.0]:
+                                        Leaf: predicts 0
+                                    Value = (652.0, 676.0]:
+                                        Leaf: predicts 0
+                                    Value = (676.0, 850.0]:
+                                        Leaf: predicts 0
+                    Value = (11.49, 13.49]:
+                        Split on feature: loan_intent
+                            Value = DEBTCONSOLIDATION:
+                                Split on feature: credit_score
+                                    Value = (389.999, 591.0]:
+                                        Leaf: predicts 0
+                                    Value = (591.0, 626.0]:
+                                        Leaf: predicts 1
+                                    Value = (626.0, 652.0]:
+                                        Leaf: predicts 0
+                                    Value = (652.0, 676.0]:
+                                        Leaf: predicts 0
+                                    Value = (676.0, 850.0]:
+                                        Leaf: predicts 0
+                            Value = EDUCATION:
+                                Split on feature: credit_score
+                                    Value = (389.999, 591.0]:
+                                        Leaf: predicts 0
+                                    Value = (591.0, 626.0]:
+                                        Leaf: predicts 0
+                                    Value = (626.0, 652.0]:
+                                        Leaf: predicts 0
+                                    Value = (652.0, 676.0]:
+                                        Leaf: predicts 0
+                                    Value = (676.0, 850.0]:
+                                        Leaf: predicts 0
+                            Value = HOMEIMPROVEMENT:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 1
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 1
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 0
+                                    Value = (76436.8, 103841.0]:
+                                        Leaf: predicts 0
+                                    Value = (103841.0, 7200766.0]:
+                                        Leaf: predicts 0
+                            Value = MEDICAL:
+                                Split on feature: loan_amnt
+                                    Value = (499.999, 4400.0]:
+                                        Leaf: predicts 0
+                                    Value = (4400.0, 6600.0]:
+                                        Leaf: predicts 0
+                                    Value = (6600.0, 10000.0]:
+                                        Leaf: predicts 0
+                                    Value = (10000.0, 14520.2]:
+                                        Leaf: predicts 0
+                                    Value = (14520.2, 35000.0]:
+                                        Leaf: predicts 1
+                            Value = PERSONAL:
+                                Split on feature: person_age
+                                    Value = (19.999, 23.0]:
+                                        Leaf: predicts 0
+                                    Value = (23.0, 25.0]:
+                                        Leaf: predicts 0
+                                    Value = (25.0, 27.0]:
+                                        Leaf: predicts 0
+                                    Value = (27.0, 31.0]:
+                                        Leaf: predicts 0
+                                    Value = (31.0, 144.0]:
+                                        Leaf: predicts 0
+                            Value = VENTURE:
+                                Split on feature: credit_score
+                                    Value = (389.999, 591.0]:
+                                        Leaf: predicts 0
+                                    Value = (591.0, 626.0]:
+                                        Leaf: predicts 0
+                                    Value = (626.0, 652.0]:
+                                        Leaf: predicts 0
+                                    Value = (652.0, 676.0]:
+                                        Leaf: predicts 0
+                                    Value = (676.0, 850.0]:
+                                        Leaf: predicts 0
+                    Value = (13.49, 20.0]:
+                        Split on feature: loan_intent
+                            Value = DEBTCONSOLIDATION:
+                                Split on feature: credit_score
+                                    Value = (389.999, 591.0]:
+                                        Leaf: predicts 1
+                                    Value = (591.0, 626.0]:
+                                        Leaf: predicts 1
+                                    Value = (626.0, 652.0]:
+                                        Leaf: predicts 1
+                                    Value = (652.0, 676.0]:
+                                        Leaf: predicts 1
+                                    Value = (676.0, 850.0]:
+                                        Leaf: predicts 1
+                            Value = EDUCATION:
+                                Split on feature: person_home_ownership
+                                    Value = MORTGAGE:
+                                        Leaf: predicts 0
+                                    Value = OTHER:
+                                        Leaf: predicts 0
+                                    Value = OWN:
+                                        Leaf: predicts 0
+                                    Value = RENT:
+                                        Leaf: predicts 1
+                            Value = HOMEIMPROVEMENT:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 1
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 1
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 1
+                                    Value = (76436.8, 103841.0]:
+                                        Leaf: predicts 0
+                                    Value = (103841.0, 7200766.0]:
+                                        Leaf: predicts 0
+                            Value = MEDICAL:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 1
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 1
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 1
+                                    Value = (76436.8, 103841.0]:
+                                        Leaf: predicts 0
+                                    Value = (103841.0, 7200766.0]:
+                                        Leaf: predicts 1
+                            Value = PERSONAL:
+                                Split on feature: person_home_ownership
+                                    Value = MORTGAGE:
+                                        Leaf: predicts 0
+                                    Value = OWN:
+                                        Leaf: predicts 0
+                                    Value = RENT:
+                                        Leaf: predicts 1
+                            Value = VENTURE:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 1
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 1
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 0
+                                    Value = (76436.8, 103841.0]:
+                                        Leaf: predicts 0
+                                    Value = (103841.0, 7200766.0]:
+                                        Leaf: predicts 0
+            Value = (0.06, 0.1]:
+                Split on feature: loan_int_rate
+                    Value = (5.419, 7.88]:
+                        Split on feature: person_income
+                            Value = (7999.999, 43081.8]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 1
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 1
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (43081.8, 59456.0]:
+                                Split on feature: person_age
+                                    Value = (19.999, 23.0]:
+                                        Leaf: predicts 0
+                                    Value = (23.0, 25.0]:
+                                        Leaf: predicts 0
+                                    Value = (25.0, 27.0]:
+                                        Leaf: predicts 0
+                                    Value = (27.0, 31.0]:
+                                        Leaf: predicts 0
+                                    Value = (31.0, 144.0]:
+                                        Leaf: predicts 0
+                            Value = (59456.0, 76436.8]:
+                                Split on feature: credit_score
+                                    Value = (389.999, 591.0]:
+                                        Leaf: predicts 0
+                                    Value = (591.0, 626.0]:
+                                        Leaf: predicts 0
+                                    Value = (626.0, 652.0]:
+                                        Leaf: predicts 0
+                                    Value = (652.0, 676.0]:
+                                        Leaf: predicts 0
+                                    Value = (676.0, 850.0]:
+                                        Leaf: predicts 0
+                            Value = (76436.8, 103841.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (103841.0, 7200766.0]:
+                                Split on feature: credit_score
+                                    Value = (389.999, 591.0]:
+                                        Leaf: predicts 0
+                                    Value = (591.0, 626.0]:
+                                        Leaf: predicts 0
+                                    Value = (626.0, 652.0]:
+                                        Leaf: predicts 0
+                                    Value = (652.0, 676.0]:
+                                        Leaf: predicts 0
+                                    Value = (676.0, 850.0]:
+                                        Leaf: predicts 0
+                    Value = (7.88, 10.58]:
+                        Split on feature: person_income
+                            Value = (7999.999, 43081.8]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 1
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (43081.8, 59456.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 1
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (59456.0, 76436.8]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (76436.8, 103841.0]:
+                                Split on feature: person_home_ownership
+                                    Value = MORTGAGE:
+                                        Leaf: predicts 0
+                                    Value = OWN:
+                                        Leaf: predicts 0
+                                    Value = RENT:
+                                        Leaf: predicts 0
+                            Value = (103841.0, 7200766.0]:
+                                Split on feature: credit_score
+                                    Value = (389.999, 591.0]:
+                                        Leaf: predicts 0
+                                    Value = (591.0, 626.0]:
+                                        Leaf: predicts 0
+                                    Value = (626.0, 652.0]:
+                                        Leaf: predicts 0
+                                    Value = (652.0, 676.0]:
+                                        Leaf: predicts 0
+                                    Value = (676.0, 850.0]:
+                                        Leaf: predicts 0
+                    Value = (10.58, 11.49]:
+                        Split on feature: person_home_ownership
+                            Value = MORTGAGE:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = OTHER:
+                                Leaf: predicts 0
+                            Value = OWN:
+                                Leaf: predicts 0
+                            Value = RENT:
+                                Split on feature: person_age
+                                    Value = (19.999, 23.0]:
+                                        Leaf: predicts 0
+                                    Value = (23.0, 25.0]:
+                                        Leaf: predicts 0
+                                    Value = (25.0, 27.0]:
+                                        Leaf: predicts 0
+                                    Value = (27.0, 31.0]:
+                                        Leaf: predicts 0
+                                    Value = (31.0, 144.0]:
+                                        Leaf: predicts 0
+                    Value = (11.49, 13.49]:
+                        Split on feature: loan_intent
+                            Value = DEBTCONSOLIDATION:
+                                Split on feature: credit_score
+                                    Value = (389.999, 591.0]:
+                                        Leaf: predicts 1
+                                    Value = (591.0, 626.0]:
+                                        Leaf: predicts 0
+                                    Value = (626.0, 652.0]:
+                                        Leaf: predicts 0
+                                    Value = (652.0, 676.0]:
+                                        Leaf: predicts 0
+                                    Value = (676.0, 850.0]:
+                                        Leaf: predicts 0
+                            Value = EDUCATION:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 0
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 0
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 0
+                                    Value = (76436.8, 103841.0]:
+                                        Leaf: predicts 0
+                                    Value = (103841.0, 7200766.0]:
+                                        Leaf: predicts 0
+                            Value = HOMEIMPROVEMENT:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 1
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 1
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 0
+                                    Value = (76436.8, 103841.0]:
+                                        Leaf: predicts 0
+                                    Value = (103841.0, 7200766.0]:
+                                        Leaf: predicts 0
+                            Value = MEDICAL:
+                                Split on feature: person_home_ownership
+                                    Value = MORTGAGE:
+                                        Leaf: predicts 0
+                                    Value = OWN:
+                                        Leaf: predicts 0
+                                    Value = RENT:
+                                        Leaf: predicts 0
+                            Value = PERSONAL:
+                                Split on feature: loan_amnt
+                                    Value = (499.999, 4400.0]:
+                                        Leaf: predicts 0
+                                    Value = (4400.0, 6600.0]:
+                                        Leaf: predicts 0
+                                    Value = (6600.0, 10000.0]:
+                                        Leaf: predicts 0
+                                    Value = (10000.0, 14520.2]:
+                                        Leaf: predicts 0
+                                    Value = (14520.2, 35000.0]:
+                                        Leaf: predicts 0
+                            Value = VENTURE:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 0
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 0
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 0
+                                    Value = (76436.8, 103841.0]:
+                                        Leaf: predicts 0
+                                    Value = (103841.0, 7200766.0]:
+                                        Leaf: predicts 0
+                    Value = (13.49, 20.0]:
+                        Split on feature: loan_intent
+                            Value = DEBTCONSOLIDATION:
+                                Split on feature: cb_person_cred_hist_length
+                                    Value = (1.999, 3.0]:
+                                        Leaf: predicts 1
+                                    Value = (3.0, 4.0]:
+                                        Leaf: predicts 1
+                                    Value = (4.0, 6.0]:
+                                        Leaf: predicts 1
+                                    Value = (6.0, 9.0]:
+                                        Leaf: predicts 1
+                                    Value = (9.0, 30.0]:
+                                        Leaf: predicts 1
+                            Value = EDUCATION:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 0
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 1
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 0
+                                    Value = (76436.8, 103841.0]:
+                                        Leaf: predicts 0
+                                    Value = (103841.0, 7200766.0]:
+                                        Leaf: predicts 0
+                            Value = HOMEIMPROVEMENT:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 1
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 1
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 1
+                                    Value = (76436.8, 103841.0]:
+                                        Leaf: predicts 0
+                                    Value = (103841.0, 7200766.0]:
+                                        Leaf: predicts 0
+                            Value = MEDICAL:
+                                Split on feature: credit_score
+                                    Value = (389.999, 591.0]:
+                                        Leaf: predicts 1
+                                    Value = (591.0, 626.0]:
+                                        Leaf: predicts 1
+                                    Value = (626.0, 652.0]:
+                                        Leaf: predicts 1
+                                    Value = (652.0, 676.0]:
+                                        Leaf: predicts 1
+                                    Value = (676.0, 850.0]:
+                                        Leaf: predicts 1
+                            Value = PERSONAL:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 1
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 1
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 0
+                                    Value = (76436.8, 103841.0]:
+                                        Leaf: predicts 1
+                                    Value = (103841.0, 7200766.0]:
+                                        Leaf: predicts 0
+                            Value = VENTURE:
+                                Split on feature: person_home_ownership
+                                    Value = MORTGAGE:
+                                        Leaf: predicts 0
+                                    Value = OTHER:
+                                        Leaf: predicts 0
+                                    Value = OWN:
+                                        Leaf: predicts 0
+                                    Value = RENT:
+                                        Leaf: predicts 1
+            Value = (0.1, 0.14]:
+                Split on feature: loan_int_rate
+                    Value = (5.419, 7.88]:
+                        Split on feature: loan_amnt
+                            Value = (499.999, 4400.0]:
+                                Leaf: predicts 0
+                            Value = (4400.0, 6600.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 1
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (6600.0, 10000.0]:
+                                Split on feature: credit_score
+                                    Value = (389.999, 591.0]:
+                                        Leaf: predicts 0
+                                    Value = (591.0, 626.0]:
+                                        Leaf: predicts 0
+                                    Value = (626.0, 652.0]:
+                                        Leaf: predicts 0
+                                    Value = (652.0, 676.0]:
+                                        Leaf: predicts 0
+                                    Value = (676.0, 850.0]:
+                                        Leaf: predicts 0
+                            Value = (10000.0, 14520.2]:
+                                Split on feature: person_home_ownership
+                                    Value = MORTGAGE:
+                                        Leaf: predicts 0
+                                    Value = OWN:
+                                        Leaf: predicts 0
+                                    Value = RENT:
+                                        Leaf: predicts 0
+                            Value = (14520.2, 35000.0]:
+                                Leaf: predicts 0
+                    Value = (7.88, 10.58]:
+                        Split on feature: loan_amnt
+                            Value = (499.999, 4400.0]:
+                                Split on feature: credit_score
+                                    Value = (389.999, 591.0]:
+                                        Leaf: predicts 1
+                                    Value = (591.0, 626.0]:
+                                        Leaf: predicts 1
+                                    Value = (626.0, 652.0]:
+                                        Leaf: predicts 1
+                                    Value = (652.0, 676.0]:
+                                        Leaf: predicts 1
+                                    Value = (676.0, 850.0]:
+                                        Leaf: predicts 0
+                            Value = (4400.0, 6600.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 1
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (6600.0, 10000.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (10000.0, 14520.2]:
+                                Split on feature: person_gender
+                                    Value = female:
+                                        Leaf: predicts 0
+                                    Value = male:
+                                        Leaf: predicts 0
+                            Value = (14520.2, 35000.0]:
+                                Split on feature: person_age
+                                    Value = (19.999, 23.0]:
+                                        Leaf: predicts 0
+                                    Value = (23.0, 25.0]:
+                                        Leaf: predicts 0
+                                    Value = (25.0, 27.0]:
+                                        Leaf: predicts 0
+                                    Value = (27.0, 31.0]:
+                                        Leaf: predicts 0
+                                    Value = (31.0, 144.0]:
+                                        Leaf: predicts 0
+                    Value = (10.58, 11.49]:
+                        Split on feature: loan_amnt
+                            Value = (499.999, 4400.0]:
+                                Split on feature: cb_person_cred_hist_length
+                                    Value = (1.999, 3.0]:
+                                        Leaf: predicts 1
+                                    Value = (3.0, 4.0]:
+                                        Leaf: predicts 0
+                                    Value = (4.0, 6.0]:
+                                        Leaf: predicts 0
+                                    Value = (6.0, 9.0]:
+                                        Leaf: predicts 1
+                                    Value = (9.0, 30.0]:
+                                        Leaf: predicts 1
+                            Value = (4400.0, 6600.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 1
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (6600.0, 10000.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (10000.0, 14520.2]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (14520.2, 35000.0]:
+                                Split on feature: credit_score
+                                    Value = (389.999, 591.0]:
+                                        Leaf: predicts 0
+                                    Value = (591.0, 626.0]:
+                                        Leaf: predicts 0
+                                    Value = (626.0, 652.0]:
+                                        Leaf: predicts 0
+                                    Value = (652.0, 676.0]:
+                                        Leaf: predicts 0
+                                    Value = (676.0, 850.0]:
+                                        Leaf: predicts 0
+                    Value = (11.49, 13.49]:
+                        Split on feature: loan_amnt
+                            Value = (499.999, 4400.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 1
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 1
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 1
+                                    Value = VENTURE:
+                                        Leaf: predicts 1
+                            Value = (4400.0, 6600.0]:
+                                Split on feature: cb_person_cred_hist_length
+                                    Value = (1.999, 3.0]:
+                                        Leaf: predicts 0
+                                    Value = (3.0, 4.0]:
+                                        Leaf: predicts 0
+                                    Value = (4.0, 6.0]:
+                                        Leaf: predicts 0
+                                    Value = (6.0, 9.0]:
+                                        Leaf: predicts 0
+                                    Value = (9.0, 30.0]:
+                                        Leaf: predicts 0
+                            Value = (6600.0, 10000.0]:
+                                Split on feature: credit_score
+                                    Value = (389.999, 591.0]:
+                                        Leaf: predicts 0
+                                    Value = (591.0, 626.0]:
+                                        Leaf: predicts 0
+                                    Value = (626.0, 652.0]:
+                                        Leaf: predicts 0
+                                    Value = (652.0, 676.0]:
+                                        Leaf: predicts 0
+                                    Value = (676.0, 850.0]:
+                                        Leaf: predicts 0
+                            Value = (10000.0, 14520.2]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (14520.2, 35000.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                    Value = (13.49, 20.0]:
+                        Split on feature: person_home_ownership
+                            Value = MORTGAGE:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 1
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 1
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = OTHER:
+                                Leaf: predicts 1
+                            Value = OWN:
+                                Leaf: predicts 0
+                            Value = RENT:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 1
+                                    Value = EDUCATION:
+                                        Leaf: predicts 1
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 1
+                                    Value = MEDICAL:
+                                        Leaf: predicts 1
+                                    Value = PERSONAL:
+                                        Leaf: predicts 1
+                                    Value = VENTURE:
+                                        Leaf: predicts 1
+            Value = (0.14, 0.21]:
+                Split on feature: loan_int_rate
+                    Value = (5.419, 7.88]:
+                        Split on feature: loan_amnt
+                            Value = (499.999, 4400.0]:
+                                Leaf: predicts 1
+                            Value = (4400.0, 6600.0]:
+                                Split on feature: credit_score
+                                    Value = (389.999, 591.0]:
+                                        Leaf: predicts 0
+                                    Value = (591.0, 626.0]:
+                                        Leaf: predicts 0
+                                    Value = (626.0, 652.0]:
+                                        Leaf: predicts 0
+                                    Value = (652.0, 676.0]:
+                                        Leaf: predicts 0
+                                    Value = (676.0, 850.0]:
+                                        Leaf: predicts 0
+                            Value = (6600.0, 10000.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (10000.0, 14520.2]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (14520.2, 35000.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                    Value = (7.88, 10.58]:
+                        Split on feature: loan_amnt
+                            Value = (499.999, 4400.0]:
+                                Split on feature: cb_person_cred_hist_length
+                                    Value = (1.999, 3.0]:
+                                        Leaf: predicts 1
+                                    Value = (3.0, 4.0]:
+                                        Leaf: predicts 1
+                                    Value = (4.0, 6.0]:
+                                        Leaf: predicts 1
+                                    Value = (6.0, 9.0]:
+                                        Leaf: predicts 1
+                                    Value = (9.0, 30.0]:
+                                        Leaf: predicts 1
+                            Value = (4400.0, 6600.0]:
+                                Split on feature: credit_score
+                                    Value = (389.999, 591.0]:
+                                        Leaf: predicts 1
+                                    Value = (591.0, 626.0]:
+                                        Leaf: predicts 0
+                                    Value = (626.0, 652.0]:
+                                        Leaf: predicts 0
+                                    Value = (652.0, 676.0]:
+                                        Leaf: predicts 0
+                                    Value = (676.0, 850.0]:
+                                        Leaf: predicts 0
+                            Value = (6600.0, 10000.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (10000.0, 14520.2]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (14520.2, 35000.0]:
+                                Split on feature: person_income
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 0
+                                    Value = (76436.8, 103841.0]:
+                                        Leaf: predicts 0
+                                    Value = (103841.0, 7200766.0]:
+                                        Leaf: predicts 0
+                    Value = (10.58, 11.49]:
+                        Split on feature: loan_amnt
+                            Value = (499.999, 4400.0]:
+                                Leaf: predicts 1
+                            Value = (4400.0, 6600.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 1
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 1
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (6600.0, 10000.0]:
+                                Split on feature: person_home_ownership
+                                    Value = MORTGAGE:
+                                        Leaf: predicts 0
+                                    Value = OWN:
+                                        Leaf: predicts 0
+                                    Value = RENT:
+                                        Leaf: predicts 0
+                            Value = (10000.0, 14520.2]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (14520.2, 35000.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                    Value = (11.49, 13.49]:
+                        Split on feature: loan_amnt
+                            Value = (499.999, 4400.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 1
+                                    Value = EDUCATION:
+                                        Leaf: predicts 1
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 1
+                                    Value = MEDICAL:
+                                        Leaf: predicts 1
+                                    Value = PERSONAL:
+                                        Leaf: predicts 1
+                                    Value = VENTURE:
+                                        Leaf: predicts 1
+                            Value = (4400.0, 6600.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 1
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 1
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 1
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (6600.0, 10000.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 1
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (10000.0, 14520.2]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 0
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 0
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (14520.2, 35000.0]:
+                                Split on feature: credit_score
+                                    Value = (389.999, 591.0]:
+                                        Leaf: predicts 0
+                                    Value = (591.0, 626.0]:
+                                        Leaf: predicts 0
+                                    Value = (626.0, 652.0]:
+                                        Leaf: predicts 0
+                                    Value = (652.0, 676.0]:
+                                        Leaf: predicts 0
+                                    Value = (676.0, 850.0]:
+                                        Leaf: predicts 0
+                    Value = (13.49, 20.0]:
+                        Split on feature: loan_intent
+                            Value = DEBTCONSOLIDATION:
+                                Split on feature: person_age
+                                    Value = (19.999, 23.0]:
+                                        Leaf: predicts 1
+                                    Value = (23.0, 25.0]:
+                                        Leaf: predicts 1
+                                    Value = (25.0, 27.0]:
+                                        Leaf: predicts 1
+                                    Value = (27.0, 31.0]:
+                                        Leaf: predicts 1
+                                    Value = (31.0, 144.0]:
+                                        Leaf: predicts 1
+                            Value = EDUCATION:
+                                Split on feature: loan_amnt
+                                    Value = (499.999, 4400.0]:
+                                        Leaf: predicts 1
+                                    Value = (4400.0, 6600.0]:
+                                        Leaf: predicts 1
+                                    Value = (6600.0, 10000.0]:
+                                        Leaf: predicts 0
+                                    Value = (10000.0, 14520.2]:
+                                        Leaf: predicts 0
+                                    Value = (14520.2, 35000.0]:
+                                        Leaf: predicts 0
+                            Value = HOMEIMPROVEMENT:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 1
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 1
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 1
+                                    Value = (76436.8, 103841.0]:
+                                        Leaf: predicts 1
+                                    Value = (103841.0, 7200766.0]:
+                                        Leaf: predicts 1
+                            Value = MEDICAL:
+                                Split on feature: person_home_ownership
+                                    Value = MORTGAGE:
+                                        Leaf: predicts 1
+                                    Value = OTHER:
+                                        Leaf: predicts 1
+                                    Value = OWN:
+                                        Leaf: predicts 0
+                                    Value = RENT:
+                                        Leaf: predicts 1
+                            Value = PERSONAL:
+                                Split on feature: loan_amnt
+                                    Value = (499.999, 4400.0]:
+                                        Leaf: predicts 1
+                                    Value = (4400.0, 6600.0]:
+                                        Leaf: predicts 1
+                                    Value = (6600.0, 10000.0]:
+                                        Leaf: predicts 1
+                                    Value = (10000.0, 14520.2]:
+                                        Leaf: predicts 0
+                                    Value = (14520.2, 35000.0]:
+                                        Leaf: predicts 0
+                            Value = VENTURE:
+                                Split on feature: loan_amnt
+                                    Value = (499.999, 4400.0]:
+                                        Leaf: predicts 1
+                                    Value = (4400.0, 6600.0]:
+                                        Leaf: predicts 1
+                                    Value = (6600.0, 10000.0]:
+                                        Leaf: predicts 1
+                                    Value = (10000.0, 14520.2]:
+                                        Leaf: predicts 0
+                                    Value = (14520.2, 35000.0]:
+                                        Leaf: predicts 1
+            Value = (0.21, 0.66]:
+                Split on feature: person_home_ownership
+                    Value = MORTGAGE:
+                        Split on feature: loan_int_rate
+                            Value = (5.419, 7.88]:
+                                Split on feature: loan_amnt
+                                    Value = (4400.0, 6600.0]:
+                                        Leaf: predicts 1
+                                    Value = (6600.0, 10000.0]:
+                                        Leaf: predicts 0
+                                    Value = (10000.0, 14520.2]:
+                                        Leaf: predicts 0
+                                    Value = (14520.2, 35000.0]:
+                                        Leaf: predicts 0
+                            Value = (7.88, 10.58]:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 0
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 0
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 0
+                                    Value = (76436.8, 103841.0]:
+                                        Leaf: predicts 0
+                                    Value = (103841.0, 7200766.0]:
+                                        Leaf: predicts 0
+                            Value = (10.58, 11.49]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 1
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 0
+                                    Value = MEDICAL:
+                                        Leaf: predicts 1
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 0
+                            Value = (11.49, 13.49]:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 1
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 0
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 0
+                                    Value = (76436.8, 103841.0]:
+                                        Leaf: predicts 0
+                                    Value = (103841.0, 7200766.0]:
+                                        Leaf: predicts 0
+                            Value = (13.49, 20.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 1
+                                    Value = EDUCATION:
+                                        Leaf: predicts 0
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 1
+                                    Value = MEDICAL:
+                                        Leaf: predicts 1
+                                    Value = PERSONAL:
+                                        Leaf: predicts 0
+                                    Value = VENTURE:
+                                        Leaf: predicts 1
+                    Value = OTHER:
+                        Leaf: predicts 1
+                    Value = OWN:
+                        Split on feature: loan_amnt
+                            Value = (499.999, 4400.0]:
+                                Leaf: predicts 1
+                            Value = (4400.0, 6600.0]:
+                                Leaf: predicts 1
+                            Value = (6600.0, 10000.0]:
+                                Split on feature: loan_int_rate
+                                    Value = (5.419, 7.88]:
+                                        Leaf: predicts 0
+                                    Value = (7.88, 10.58]:
+                                        Leaf: predicts 0
+                                    Value = (10.58, 11.49]:
+                                        Leaf: predicts 0
+                                    Value = (11.49, 13.49]:
+                                        Leaf: predicts 0
+                                    Value = (13.49, 20.0]:
+                                        Leaf: predicts 1
+                            Value = (10000.0, 14520.2]:
+                                Leaf: predicts 0
+                            Value = (14520.2, 35000.0]:
+                                Split on feature: loan_int_rate
+                                    Value = (5.419, 7.88]:
+                                        Leaf: predicts 0
+                                    Value = (7.88, 10.58]:
+                                        Leaf: predicts 0
+                                    Value = (10.58, 11.49]:
+                                        Leaf: predicts 0
+                                    Value = (11.49, 13.49]:
+                                        Leaf: predicts 0
+                                    Value = (13.49, 20.0]:
+                                        Leaf: predicts 0
+                    Value = RENT:
+                        Split on feature: loan_amnt
+                            Value = (499.999, 4400.0]:
+                                Leaf: predicts 1
+                            Value = (4400.0, 6600.0]:
+                                Split on feature: loan_intent
+                                    Value = DEBTCONSOLIDATION:
+                                        Leaf: predicts 1
+                                    Value = EDUCATION:
+                                        Leaf: predicts 1
+                                    Value = HOMEIMPROVEMENT:
+                                        Leaf: predicts 1
+                                    Value = MEDICAL:
+                                        Leaf: predicts 1
+                                    Value = PERSONAL:
+                                        Leaf: predicts 1
+                                    Value = VENTURE:
+                                        Leaf: predicts 1
+                            Value = (6600.0, 10000.0]:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 1
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 0
+                            Value = (10000.0, 14520.2]:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 1
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 1
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 0
+                            Value = (14520.2, 35000.0]:
+                                Split on feature: person_income
+                                    Value = (7999.999, 43081.8]:
+                                        Leaf: predicts 1
+                                    Value = (43081.8, 59456.0]:
+                                        Leaf: predicts 1
+                                    Value = (59456.0, 76436.8]:
+                                        Leaf: predicts 1
+                                    Value = (76436.8, 103841.0]:
+                                        Leaf: predicts 1
+                                    Value = (103841.0, 7200766.0]:
+                                        Leaf: predicts 1
+    Value = Yes:
+        Leaf: predicts 0
